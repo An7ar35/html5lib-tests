@@ -87,7 +87,7 @@
  "input":"<h a='b' a='d'>",
  "output":[["StartTag", "h", {"a":"b"}]],
  "errors":[
-    { "code": "duplicate-attribute", "line": 1, "col": 11 }
+    { "code": "duplicate-attribute", "line": 1, "col": 10 }
 ]},
 
 {"description":"Simple comment",

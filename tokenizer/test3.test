@@ -443,7 +443,7 @@
 "input":";\uDBC0\uDC00",
 "output":[["Character", ";\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-cdata", "line": 1, "col": 4 }
+    { "code": "eof-in-cdata", "line": 1, "col": 3 }
 ]},
 
 {"description":"<",
@@ -958,7 +958,7 @@
 "input":"<!-- -\uDBC0\uDC00",
 "output":[["Comment", " -\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-comment", "line": 1, "col": 9 }
+    { "code": "eof-in-comment", "line": 1, "col": 8 }
 ]},
 
 {"description":"<!-- .",
@@ -1105,7 +1105,7 @@
 "input":"<!-- \uDBC0\uDC00",
 "output":[["Comment", " \uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-comment", "line": 1, "col": 8 }
+    { "code": "eof-in-comment", "line": 1, "col": 7 }
 ]},
 
 {"description":"<!--!",
@@ -1568,7 +1568,7 @@
 "input":"<!----\uDBC0\uDC00",
 "output":[["Comment", "--\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-comment", "line": 1, "col": 9 }
+    { "code": "eof-in-comment", "line": 1, "col": 8 }
 ]},
 
 {"description":"<!---.",
@@ -1708,7 +1708,7 @@
 "input":"<!---\uDBC0\uDC00",
 "output":[["Comment", "-\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-comment", "line": 1, "col": 8 }
+    { "code": "eof-in-comment", "line": 1, "col": 7 }
 ]},
 
 {"description":"<!--.",
@@ -1848,7 +1848,7 @@
 "input":"<!--\uDBC0\uDC00",
 "output":[["Comment", "\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-comment", "line": 1, "col": 7 }
+    { "code": "eof-in-comment", "line": 1, "col": 6 }
 ]},
 
 {"description":"<!/",
@@ -2826,7 +2826,7 @@
 "output":[["DOCTYPE", "a", "\uDBC0\uDC00", null, false]],
 "errors": [
     { "code": "missing-whitespace-after-doctype-public-keyword", "col": 19, "line": 1 },
-    { "code": "eof-in-doctype", "col": 22, "line": 1 }
+    { "code": "eof-in-doctype", "col": 21, "line": 1 }
 ]},
 
 {"description":"<!DOCTYPE a PUBLIC#",
@@ -3439,7 +3439,7 @@
 "output":[["DOCTYPE", "a", "\uDBC0\uDC00", null, false]],
 "errors": [
     { "code": "missing-whitespace-after-doctype-public-keyword", "col": 19, "line": 1 },
-    { "code": "eof-in-doctype", "col": 22, "line": 1 }
+    { "code": "eof-in-doctype", "col": 21, "line": 1 }
 ]},
 
 {"description":"<!DOCTYPE a PUBLIC(",
@@ -3956,7 +3956,7 @@
 "output":[["DOCTYPE", "a", null, "\uDBC0\uDC00", false]],
 "errors":[
     { "code": "missing-whitespace-after-doctype-system-keyword", "line": 1, "col": 19 },
-    { "code": "eof-in-doctype", "col": 22, "line": 1 }
+    { "code": "eof-in-doctype", "col": 21, "line": 1 }
 ]},
 
 {"description":"<!DOCTYPE a SYSTEM#",
@@ -4529,7 +4529,7 @@
 "output":[["DOCTYPE", "a", null, "\uDBC0\uDC00", false]],
 "errors":[
     { "code": "missing-whitespace-after-doctype-system-keyword", "line": 1, "col": 19 },
-    { "code": "eof-in-doctype", "col": 22, "line": 1 }
+    { "code": "eof-in-doctype", "col": 21, "line": 1 }
 ]},
 
 {"description":"<!DOCTYPE a SYSTEM(",
@@ -5144,7 +5144,7 @@
 "input":"<!DOCTYPE a\uDBC0\uDC00",
 "output":[["DOCTYPE", "a\uDBC0\uDC00", null, null, false]],
 "errors":[
-   { "code": "eof-in-doctype", "line": 1, "col": 14 }
+   { "code": "eof-in-doctype", "line": 1, "col": 13 }
 ]},
 
 {"description":"<!DOCTYPE b",
@@ -5179,7 +5179,7 @@
 "input":"<!DOCTYPE \uDBC0\uDC00",
 "output":[["DOCTYPE", "\uDBC0\uDC00", null, null, false]],
 "errors":[
-   { "code": "eof-in-doctype", "line": 1, "col": 13 }
+   { "code": "eof-in-doctype", "line": 1, "col": 12 }
 ]},
 
 {"description":"<!DOCTYPE!",
@@ -6010,7 +6010,7 @@
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
     { "code": "missing-whitespace-after-doctype-public-keyword", "line": 1, "col": 18 },
-    { "code": "eof-in-doctype", "line": 1, "col": 21 }
+    { "code": "eof-in-doctype", "line": 1, "col": 20 }
 ]},
 
 {"description":"<!DOCTYPEa PUBLIC#",
@@ -6654,7 +6654,7 @@
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
     { "code": "missing-whitespace-after-doctype-public-keyword", "line": 1, "col": 18 },
-    { "code": "eof-in-doctype", "line": 1, "col": 21 }
+    { "code": "eof-in-doctype", "line": 1, "col": 20 }
 ]},
 
 {"description":"<!DOCTYPEa PUBLIC(",
@@ -7222,7 +7222,7 @@
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
     { "code": "missing-whitespace-after-doctype-system-keyword", "line": 1, "col": 18 },
-    { "code": "eof-in-doctype", "line": 1, "col": 21 }
+    { "code": "eof-in-doctype", "line": 1, "col": 20 }
 ]},
 
 {"description":"<!DOCTYPEa SYSTEM#",
@@ -7846,7 +7846,7 @@
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
     { "code": "missing-whitespace-after-doctype-system-keyword", "line": 1, "col": 18 },
-    { "code": "eof-in-doctype", "line": 1, "col": 21 }
+    { "code": "eof-in-doctype", "line": 1, "col": 20 }
 ]},
 
 {"description":"<!DOCTYPEa SYSTEM(",
@@ -8551,7 +8551,7 @@
 "output":[["DOCTYPE", "a\uDBC0\uDC00", null, null, false]],
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
-    { "code": "eof-in-doctype", "line": 1, "col": 13 }
+    { "code": "eof-in-doctype", "line": 1, "col": 12 }
 ]},
 
 {"description":"<!DOCTYPEb",
@@ -8591,7 +8591,7 @@
 "output":[["DOCTYPE", "\uDBC0\uDC00", null, null, false]],
 "errors":[
     { "code": "missing-whitespace-before-doctype-name", "line": 1, "col": 10 },
-    { "code": "eof-in-doctype", "line": 1, "col": 12 }
+    { "code": "eof-in-doctype", "line": 1, "col": 11 }
 ]},
 
 {"description":"<!Y",
@@ -9611,7 +9611,7 @@
 "input":"<a a A>",
 "output":[["StartTag", "a", {"a":""}]],
 "errors":[
-    { "code": "duplicate-attribute", "line": 1, "col": 7 }
+    { "code": "duplicate-attribute", "line": 1, "col": 6 }
 ]},
 
 {"description":"<a a B>",
@@ -9638,7 +9638,7 @@
 "input":"<a a a>",
 "output":[["StartTag", "a", {"a":""}]],
 "errors":[
-    { "code": "duplicate-attribute", "line": 1, "col": 7 }
+    { "code": "duplicate-attribute", "line": 1, "col": 6 }
 ]},
 
 {"description":"<a a b>",
@@ -10164,7 +10164,7 @@
 "output":[["StartTag", "a", {"a":""}]],
 "errors":[
     { "code": "missing-whitespace-between-attributes", "line": 1, "col": 8 },
-    { "code": "duplicate-attribute", "line": 1, "col": 9 }
+    { "code": "duplicate-attribute", "line": 1, "col": 8 }
 ]},
 
 {"description":"<a a=''B>",
@@ -10200,7 +10200,7 @@
 "output":[["StartTag", "a", {"a":""}]],
 "errors":[
     { "code": "missing-whitespace-between-attributes", "line": 1, "col": 8 },
-    { "code": "duplicate-attribute", "line": 1, "col": 9 }
+    { "code": "duplicate-attribute", "line": 1, "col": 8 }
 ]},
 
 {"description":"<a a=''b>",
@@ -11227,7 +11227,7 @@
 "input":"\uDBC0\uDC00",
 "output":[["Character", "\uDBC0\uDC00"]],
 "errors":[
-    { "code": "eof-in-cdata", "line": 1, "col": 3 }
+    { "code": "eof-in-cdata", "line": 1, "col": 2 }
 ]}
 
 ]}

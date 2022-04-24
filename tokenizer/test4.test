@@ -302,8 +302,8 @@
 "input":"<x x=1 x=2 X=3>",
 "output":[["StartTag", "x", { "x":"1" }]],
 "errors":[
-    { "code": "duplicate-attribute", "line": 1, "col": 9 },
-    { "code": "duplicate-attribute", "line": 1, "col": 13 }
+    { "code": "duplicate-attribute", "line": 1, "col": 8 },
+    { "code": "duplicate-attribute", "line": 1, "col": 12 }
 ]},
 
 {"description":"Uppercase close tag attributes",
@@ -317,7 +317,7 @@
 "input":"</x x x>",
 "output":[["EndTag", "x"]],
 "errors":[
-    { "code": "duplicate-attribute", "line": 1, "col": 8 },
+    { "code": "duplicate-attribute", "line": 1, "col": 7 },
     { "code": "end-tag-with-attributes", "line": 1, "col": 8 }
 ]},
 
